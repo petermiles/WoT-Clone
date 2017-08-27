@@ -1,0 +1,248 @@
+/*Global Styles */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: lato;
+  background-color: #F0F0F0;
+}
+
+.nav-container {
+  padding: 2vh 0;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.blockitems {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.orangetext {
+  color: #FF803A
+}
+.greentext {
+  color : #B2C736
+}
+
+/*Nav Styles */
+
+li {
+  list-style-type: none;
+}
+
+.navlogo{
+  float: left;
+  height: 31px;
+  width: 155px;
+}
+
+.nav-container a {
+  text-decoration: none;
+  color: white;
+}
+.nav-container a:hover {
+  border-bottom: 4px solid #bdd436;
+  padding-bottom: 2px;
+}
+.navlink {
+  display: inline;
+  float: right;
+  color: #F0F0F0;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 20px 0 0;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.navbutton {
+  display: none;
+}
+
+/*Masthead Text Styling*/
+
+.masthead {
+  position: absolute;
+  max-height: 515px;
+  width: 100%;
+  height: 100%;
+  background: url(http://cdn01.wideopentech.com/themes/wot-2013-gm/_/img/wot-masthead-dark.jpg) center top;
+  background-repeat: none;
+  background-size: cover;
+}
+
+.masthead-text {
+  padding: 10vh 0 0;
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto;
+  line-height: .9;
+  color: #fff;
+  font-family: Oswald;
+  letter-spacing: 1px;
+}
+
+
+.topblockitems {
+  font-size: 22px;
+  font-weight: 500;
+  display: block;
+  text-align: left;
+  margin-left: 2em;
+  text-decoration-style: wavy;
+}
+
+
+
+.middleblockitems {
+  font-size: 155px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.bottomblockitems {
+  margin-top: 5vh;
+  font-size: 18px;
+  display: block;
+  text-transform: none;
+  margin-left: 20%;
+  margin-right: 20%;
+  position: relative;
+  font-weight: 500;
+}
+
+.bottomblockitems::before {
+  content: " ";
+  display: block;
+  background: #fff;
+  height: 9px;
+  width: 20%;
+  position: absolute;
+  left: -20%;
+  top: 5px;
+}
+
+.bottomblockitems::after {
+  content: " ";
+  display: block;
+  background: #fff;
+  height: 9px;
+  width: 20%;
+  position: absolute;
+  left: 100%;
+  top: 5px;
+}
+
+.learnbutton {
+  background: #bdd436 ;
+  border: 2px solid #bdd436 ;
+  color: #FFF ;
+  font-size: 16px ;
+  font-weight: 700 ;
+  letter-spacing: 1px;
+  margin: 6vh;
+  padding: 11px 36px ;
+  border-radius: 25px ;
+  max-width: 50vh;
+}
+
+/*Descriptive Text*/
+
+.introtext {
+  color: #6A787C;
+  width: 70%;
+  margin-top: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Oswald;
+}
+
+.desctext {
+  font-family: 'Open Sans';
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1.4em;
+  letter-spacing: 1.5px;
+}
+
+.specialtext {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 42px;
+  font-weight: 300;
+  margin-top: 36px;
+}
+
+.workstext {
+  font-weight: bold;
+  color: #bdd436;
+  font-style: normal;
+}
+
+.introtext .specialtext::before {
+  content: " ";
+  display: block;
+  background: url(../img/tools.png);
+  width: 90px;
+  height: 90px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+
+/*Media Queries */
+
+@media (max-width: 1068px) {
+  .nav-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 985px) {
+  .navlink {
+    display: none;
+  }
+  .navbutton {
+    font-size: 2em;
+    display: block;
+    float: right;
+  }
+
+  .masthead-text {
+    width: 100%
+    margin: 6vh 0 6vh 2vh;
+    max-width: 200vh;
+  }
+
+  .middleblockitems {
+    font-size: 7em;
+  }
+
+  .topblockitems {
+    text-align: center;
+  }
+
+  /*.bottomblockitems::after {
+    left: 80%;
+  }
+  .bottomblockitems::before  {
+    left: 0%;
+  }*/
+  .learnbutton {
+    width: 80vh;
+  }
+  .introtext {
+    margin-top: 5vh;
+    padding: 2vh;
+  }
+}
+
+}
